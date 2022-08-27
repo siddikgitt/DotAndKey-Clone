@@ -1,0 +1,23 @@
+.slides {
+  position: relative;
+}
+
+.slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 50%;
+  font-size: 15px !important;
+}
+
+.slides .slick-prev:before {
+  content: '' !important;
+  color: black;
+  background-color: red;
+  font-size: 30px;
+}
+
+.slides .slick-next:before {
+  content: '' !important;
+  color: red;
+  font-size: 30px;
+}
