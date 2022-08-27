@@ -66,7 +66,7 @@ export default class LovedBy_Slider extends Component {
       arrow: false,
       className: "slides.slides",
       nextArrow: <SampleNextArrow />,
-      prevArrow: <SamplePrevArrow />,
+      prevArrow: <SamplePrevArrow />
     };
     return (
       <div style={{margin: "auto", justifyContent: "center", width: "90%"}}>
