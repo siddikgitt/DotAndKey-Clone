@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import Checkout from "../Checkout/Checkout";
 import LandingPage from "../LandingPage/LandingPage";
 import Login from "../LoginPage/Login";
 import MyAccount from "../LoginPage/MyAccount";
@@ -24,7 +25,16 @@ const AllRoutes = () => {
           }
         />
         <Route path="/shopall" element={<ShopAll />} />
-        <Route path="/singleproduct" element={<SingleProduct/>}/>
+        <Route path="/singleproduct" element={<SingleProduct />} />
+        <Route
+          path="/checkout"
+          element={
+            <PrivateRoutes>
+              <Checkout />
+            </PrivateRoutes>
+          }
+        />
+        
       </Routes>
     </>
   );
