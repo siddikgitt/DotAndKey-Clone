@@ -1,8 +1,9 @@
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
-import React, { Component, useEffect, useState } from "react";
+import React, { Component, useContext, useEffect, useState } from "react";
 import Slider from "react-slick";
 
-import { Box, Button, Center, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Button, Center, Flex, Image, SimpleGrid, Text, useDisclosure } from "@chakra-ui/react";
+import { Navigate, useNavigate, useSearchParams } from "react-router-dom";
 
 import slides from "../LandingPage/NA_Slider.module.css";
 import "slick-carousel/slick/slick.css";
@@ -10,6 +11,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 import axios from "axios";
 import { get_NewArrival } from "../API/api";
+import { AppContext } from "../Context/AppContext";
+import Bag_Drawer from "../Navbar/Bag_Drawer";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -43,7 +46,13 @@ export function NA_Slider_Function() {
   useEffect(() => {
     get_NewArrival().then((res) => setdata(res));
   }, []);
-  return <NA_Slider data={data} />;
+  const navigate = useNavigate();
+  const handleClick = (value) => {
+    navigate("/singleproduct", { state: value });
+  };
+  const {addToCart} = useContext(AppContext);
+  const drawerBag = useDisclosure();
+  return <NA_Slider drawerBag={drawerBag} addToCart={addToCart} handleClick={handleClick} data={data} />;
 }
 
 export default class NA_Slider extends Component {
@@ -82,6 +91,9 @@ export default class NA_Slider extends Component {
       ]
     };
 
+    const drawerBag = this.props.drawerBag
+    const addToCart = this.props.addToCart
+    const handleClick = this.props.handleClick
     const data = this.props.data;
 
     return (
@@ -93,7 +105,7 @@ export default class NA_Slider extends Component {
         >
           {data?.map((el) => (
               <Box padding={"40px"}>
-                <Image src={el.image} />
+                <Image src={el.image} onClick={() => handleClick(el)}/>
                 <Flex>
                   <span>&#11088;</span>
                   <Text>{el.ratings}/5</Text>
@@ -101,14 +113,21 @@ export default class NA_Slider extends Component {
                 </Flex>
                 <Text noOfLines={2} fontWeight={"semibold"}>{el.name}</Text>
                 <Flex>
-                <del>{el.mrp}</del>
-                <Text color={"red"}>{el.ourPrice}</Text>
+                  <del>Rs.{el.mrp}</del>
+                <Text color={"red"}>Rs.{el.ourPrice}</Text>
                 </Flex>
 
-                <Button bg={"#50504b"} color="white" width={"100%"}>ADD TO CART</Button>
+                <Button
+                onClick={() => {
+                  addToCart(el.name, el.ourPrice,1, el.image);
+                  drawerBag.onOpen()
+                }}
+                bg={"#50504b"} color="white" width={"100%"}>ADD TO CART</Button>
               </Box>
           ))}
         </Slider>
+      <Bag_Drawer onClose={drawerBag.onClose} isOpen={drawerBag.isOpen}/>
+
       </div>
     );
   }
