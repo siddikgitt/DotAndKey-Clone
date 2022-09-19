@@ -21,7 +21,7 @@ Deploy link: https://timecamp.vercel.app/
 
 
 <h1>Checkout Page</h1>
-<img src="https://i.ibb.co/N2ZD431/temp.jpg" alt=""/>
+<img src="https://ibb.co/N2ZD431" alt=""/>
 
 # [Getting Started]
 
