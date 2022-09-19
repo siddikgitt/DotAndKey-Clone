@@ -6,22 +6,22 @@ Deploy link: https://timecamp.vercel.app/
 <h1>Some glimpse from our Website </h1>
 
 <h1>Home Page</h1>
-<img src="https://i.ibb.co/3S22dfV/temp.jpg" alt=""/>
+<img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-09-19/temp_742316.jpeg" alt=""/>
 
-<h1>Product Slider</h1>
-<img src="https://i.ibb.co/C9J0SSc/temp.jpg" alt=""/>
+<h1>Best Seller Slider</h1>
+<img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-09-19/temp_994829.jpeg" alt=""/>
 
 <h1>Login Page</h1>
-<img src="https://i.ibb.co/fGXFpRJ/temp.jpg" alt=""/>
+<img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-09-19/temp_883685.jpeg" alt=""/>
 
 
 <h1>Bag Drawer</h1>
-<img src="https://i.ibb.co/0mBvh7B/temp.jpg" alt=""/>
+<img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-09-19/temp_636775.jpeg" alt=""/>
 
 
 
 <h1>Checkout Page</h1>
-<img src="https://ibb.co/N2ZD431" alt=""/>
+<img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-09-19/temp_619375.jpeg" alt=""/>
 
 # [Getting Started]
 
