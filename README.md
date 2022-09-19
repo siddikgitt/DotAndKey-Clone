@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# DotAndKey-clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This website is a clone of DotAndKey.com which is an best skincare e-commerce store available online.
 
-## Available Scripts
+Deploy link: https://timecamp.vercel.app/
+<h1>Some glimpse from our Website </h1>
 
-In the project directory, you can run:
+<h1>Home Page</h1>
+<img src="https://i.ibb.co/3S22dfV/temp.jpg" alt=""/>
 
-### `npm start`
+<h1>Product Slider</h1>
+<img src="https://i.ibb.co/C9J0SSc/temp.jpg" alt=""/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h1>Login Page</h1>
+<img src="https://i.ibb.co/fGXFpRJ/temp.jpg" alt=""/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+<h1>Bag Drawer</h1>
+<img src="https://i.ibb.co/0mBvh7B/temp.jpg" alt=""/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h1>Checkout Page</h1>
+<img src="https://i.ibb.co/N2ZD431/temp.jpg" alt=""/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# [Getting Started]
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<h3>Execution</h3>
+<p>If you want to run our project in your local machine</p>
+<p>Follow the given steps:</p>
+<ul>
+<li>Clone our repository <a href="https://github.com/iamdebobrota/decisive-duck-1364"</a></li>
+<li>Open our code in VS code</li>
+<li>Go to the client folder using cd client command</li>
+<li>In the terminal write npm install, it will install all the dependencies for our project</li>
+<li>Than simply write npm start</li>
+<li>Congratulations! Now you can navigate to our website</li>
+</ul>
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h1>Tech Stack</h1>
+<ul>
+<li>React.JS</li>
+<li>Tailwind</li>
+<li>API</li>
+</ul>
