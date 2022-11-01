@@ -2,7 +2,7 @@
 
 This website is a clone of DotAndKey.com which is an best skincare e-commerce store available online.
 
-Deploy link: https://timecamp.vercel.app/
+
 <h1>Some glimpse from our Website </h1>
 
 <h1>Home Page</h1>
